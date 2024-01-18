@@ -4,7 +4,7 @@
 
 [English](./README.md) | **中文**
 
-> node.js 工具库
+> `node.js` 工具库
 
 ## 安装
 

@@ -45,7 +45,9 @@
     "prepare": "husky install",
     "prepublishOnly": "npm run build && np --any-branch --no-yarn --yolo --no-publish --message \"chore: release v%s\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "kolorist": "^1.8.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
     "@tomjs/commitlint": "^2.1.2",

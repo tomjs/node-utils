@@ -8,12 +8,14 @@ export default defineConfig({
     target: ['es2021', 'node16'],
     lib: {
       entry: 'src/index.ts',
-      name: 'Tomjs',
       fileName: 'index',
       formats: ['es', 'cjs'],
     },
     minify: false,
     rollupOptions: {
+      output: {
+        exports: 'named',
+      },
       external: builtinModules
         .concat(builtinModules.map(s => `node:${s}`))
         .concat(Object.keys(pkg.dependencies)),
